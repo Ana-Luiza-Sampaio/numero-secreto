@@ -3,9 +3,17 @@ function verificaValorValido(chute){
 
 //1o verificação - valor numérico:    
     
-    if(chuteInvalido(numero)){
-        elementoChute.innerHTML += '<div>Valor inválido</div>'
-        return
+     if(chuteInvalido(numero)){
+        if(chute.toUpperCase() === 'GAME OVER'){
+            document.body.innerHTML = `
+                <h2>GAME OVER</h2>
+                <h3>Clique no botão 'Jogar novamente' para tentar de novo</h3>
+                <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>
+            `    
+        }else{
+            elementoChute.innerHTML += '<div>Valor inválido</div>'
+            return
+        }
     };
 
 //2o verificação - valor permitido:
