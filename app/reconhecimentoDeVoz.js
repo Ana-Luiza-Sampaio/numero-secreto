@@ -4,7 +4,7 @@ const elementoChute = document.getElementById('chute');
 window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
 //habilita reconhecimento de voz
 const recognition = new SpeechRecognition();
-recognition.lang = "pt-br"
+recognition.lang = "eng"
 //inicia reconhecimento de voz
 recognition.start();
 recognition.addEventListener('result', onSpeak);
