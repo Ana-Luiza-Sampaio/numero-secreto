@@ -11,7 +11,7 @@ function verificaValorValido(chute){
                 <button id="jogar-novamente" class="btn-jogar">Restart</button>
             `    
         }else{
-            elementoChute.innerHTML += '<div>Invalid entry, try again/div>'
+            elementoChute.innerHTML += '<div>Invalid entry, try again</div>'
             return
         }
     };
@@ -29,9 +29,9 @@ function verificaValorValido(chute){
 
     if(numero === numeroSecreto){
         document.body.innerHTML = `
-            <h2>Você acertou!</h2>
-            <h3>O número secreto era ${numeroSecreto}</h3>
-            <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>
+            <h2>You found it!</h2>
+            <h3>The secret number was: ${numeroSecreto}</h3>
+            <button id="jogar-novamente" class="btn-jogar">Restart</button>
         `
     } else if (numero > numeroSecreto){
         elementoChute.innerHTML += `
