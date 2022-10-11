@@ -20,7 +20,7 @@ function verificaValorValido(chute){
 
     if(diferenteDoPermitido(numero)){
        elementoChute.innerHTML += `
-            <div>Invalid entry. The secret number is somewhere betwenn ${menorValor} and ${maiorValor}</div>
+            <div>Invalid entry. The secret number is somewhere between ${menorValor} and ${maiorValor}</div>
        `
        return
     };
