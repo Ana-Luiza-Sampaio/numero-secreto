@@ -11,7 +11,7 @@ function verificaValorValido(chute){
                 <button id="jogar-novamente" class="btn-jogar">Restart</button>
             `    
         }else{
-            elementoChute.innerHTML += '<div>Valor inválido</div>'
+            elementoChute.innerHTML += '<div>Invalid entry, try again/div>'
             return
         }
     };
