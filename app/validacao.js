@@ -35,11 +35,11 @@ function verificaValorValido(chute){
         `
     } else if (numero > numeroSecreto){
         elementoChute.innerHTML += `
-            <div>O número secreto é menor <i class="fa-solid fa-arrow-down"></i>
+            <div>The secret number is lower than this<i class="fa-solid fa-arrow-down"></i>
         `
     } else{
         elementoChute.innerHTML += `
-            <div>O número secreto é maior <i class="fa-solid fa-arrow-up"></i>
+            <div>The secret number is higher that this<i class="fa-solid fa-arrow-up"></i>
         `
     }
 };
