@@ -18,7 +18,7 @@ function onSpeak(evento){
 //função para exibir chute na tela
 function exibeChuteNaTela(chute){
     elementoChute.innerHTML = `
-        <div>Você disse:</div>
+        <div>You said:</div>
         <span class="box">${chute}</span>
     `
 }
