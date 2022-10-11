@@ -7,8 +7,8 @@ function verificaValorValido(chute){
         if(chute.toUpperCase() === 'GAME OVER'){
             document.body.innerHTML = `
                 <h2>GAME OVER</h2>
-                <h3>Clique no botão 'Jogar novamente' para tentar de novo</h3>
-                <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>
+                <h3>Click on the "Restart" button to try again</h3>
+                <button id="jogar-novamente" class="btn-jogar">Restart</button>
             `    
         }else{
             elementoChute.innerHTML += '<div>Valor inválido</div>'
@@ -20,7 +20,7 @@ function verificaValorValido(chute){
 
     if(diferenteDoPermitido(numero)){
        elementoChute.innerHTML += `
-            <div>Valor inválido. 0 número secreto deve estar entre ${menorValor} e ${maiorValor}</div>
+            <div>Invalid entry. The secret number is somewhere betwenn ${menorValor} and ${maiorValor}</div>
        `
        return
     };
